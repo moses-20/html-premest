@@ -1,63 +1,117 @@
-<!-- ordered lists -->
-<h3>Important Web Technologies</h3>
-<ol>
-  <li>HyperText Markup Language</li>
-  <li>Cascading Style Sheets</li>
-  <li>JavaScript</li>
-</ol>
+<!-- input element and types -->
+<h3>Input element and types</h3>
+<div>
+  text
+  <input type="text" /> <br />
+  <br />
+</div>
 
-<!-- ordered list types -->
-<h3>Important Web Technologies</h3>
-<ol type="1" start="8" reversed>
-  <li>HyperText Markup Language</li>
-  <li>Cascading Style Sheets</li>
-  <li>JavaScript</li>
-</ol>
+<div>
+  email
+  <input type="email" /> <br />
+  <br />
+</div>
 
-<!-- unordered lists -->
-<h3>Important Web Technologies</h3>
-<ul>
-  <li>HyperText Markup Language</li>
-  <li>Cascading Style Sheets</li>
-  <li>JavaScript</li>
-</ul>
+<div>
+  password
+  <input type="password" /> <br />
+  <br />
+</div>
 
-<!-- details and summary element -->
-<details>
-  <summary>HTML</summary>
-  <p>
-    The HyperText Markup Language, or HTML is the standard markup language for
-    documents designed to be displayed in a web browser. It can be assisted by
-    technologies such as Cascading Style Sheets (CSS) and scripting languages
-    such as JavaScript.
-  </p>
-</details>
-<br />
+<div>
+  <input type="date" /> <br />
+  <br />
+</div>
 
-<!-- table element -->
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Surname</th>
-      <th>Skills</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Gbemu</td>
-      <td>Terra</td>
-      <td>XML</td>
-    </tr>
-    <tr>
-      <td>Yamah</td>
-      <td>Knoorls</td>
-      <td>SGML</td>
-    </tr>
-    <tr>
-      <td>Kri</td>
-      <td>Santos</td>
-      <td>HTML</td>
-    </tr>
-  </tbody>
-</table>
+<div><input type="color" /> <br /><br /></div>
+
+<div><input type="checkbox" /> <br /><br /></div>
+
+<div>
+  <input type="button" value="click me" /> <br />
+  <br />
+</div>
+
+<!-- label element with inputs -->
+<h3>Label with inputs</h3>
+<div>
+  <label for="name">What is your name:</label>
+  <input type="text" name="name" />
+  <br />
+  <br />
+</div>
+
+<div>
+  <label>Gender:</label>
+  <label>
+    <input type="radio" name="gender" value="male" />
+    Male
+  </label>
+  <label>
+    <input type="radio" name="gender" value="female" />
+    Female
+  </label>
+  <br />
+  <br />
+</div>
+
+<div>
+  <input type="checkbox" name="terms" id="terms" />
+  <label for="terms">I agree to terms and conditions</label>
+  <br />
+  <br />
+</div>
+
+<!-- options element -->
+<div>
+  <label for="language">Primary language:</label>
+  <select>
+    <option>Twi</option>
+    <option>Ewe</option>
+    <option>Fante</option>
+    <option>Ga</option>
+    <option>Adangbe</option>
+  </select>
+
+  <br />
+  <br />
+</div>
+
+<!-- fieldset, legend and form elements -->
+<h3>Fieldset, Legend and Form Elements</h3>
+<form action="#" method="post">
+  <fieldset>
+    <legend>Personal Data</legend>
+    <label for="first_name">First Name: </label>
+    <input type="text" name="first_name" placeholder="first name" />
+    <br />
+    <br />
+
+    <label for="last_name">Last Name: </label>
+    <input type="text" name="last_name" placeholder="last name" />
+    <br />
+    <br />
+
+    <label for="age">Age:</label>
+    <input type="number" name="age" min="18" max="100" />
+  </fieldset>
+  <br />
+  <br />
+
+  <fieldset>
+    <legend>Contact Details</legend>
+    <label for="email">What is your email:</label>
+    <input type="email" name="email" required />
+    <br />
+    <br />
+    <input type="checkbox" name="terms" id="terms" />
+    <label for="terms">I agree to recieve marketing emails</label>
+    <br />
+    <br />
+  </fieldset>
+
+  <br />
+  <br />
+  <input type="reset" value="Reset Form" />
+  <input type="button" value="Submit Form" />
+</form>
