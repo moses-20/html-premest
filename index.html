@@ -1,46 +1,95 @@
-<!-- image element -->
-<h3>Displaying Images</h3>
-<img src="/images/leaves.jpg" alt="a blue car" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My HTML Site</title>
+  </head>
+  <body>
+    <header>
+      <h2>My Website</h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
 
-<!-- picture element -->
-<picture>
-  <source srcset="/images/leaves.png" type="image/png" />
-  <source srcset="/images/leaves.webp" type="image/webp" />
-  <img src="/images/leaves.jpg" alt="green leaves" />
-</picture>
+      <h1>Welcome to my awesome Website</h1>
+    </header>
+    <main>
+      <section>
+        <h3>About Me</h3>
+        <p>
+          Et reprehenderit nisi aute proident ut deserunt laborum adipisicing
+          aliqua. Aliqua veniam do fugiat esse magna velit ea non exercitation
+          fugiat laboris. Esse ullamco laborum laborum minim officia anim
+          laboris labore consequat reprehenderit id. Laboris sit magna duis ad
+          occaecat est culpa reprehenderit Lorem nisi mollit nostrud. Voluptate
+          anim officia aute proident sit deserunt adipisicing pariatur. Nisi in
+          consequat ullamco occaecat pariatur eiusmod dolor anim ut.
+        </p>
 
-<br />
-<br />
-<h3>Responsive Image</h3>
-<picture>
-  <source
-    media="(max-width: 760px)"
-    srcset="/images/leaves.png"
-    type="image/png"
-  />
-  <source
-    media="(min-width: 761px)"
-    srcset="/images/leaves@2x.png"
-    type="image/webp"
-  />
-  <img src="/images/leaves.png" alt="green leaves" />
-</picture>
+        <p>
+          Cupidatat eu adipisicing ullamco adipisicing minim. Veniam qui
+          deserunt duis sint incididunt enim fugiat aute commodo aliqua. In
+          excepteur irure elit nisi aute tempor Lorem duis nulla nulla officia.
+          Et irure occaecat exercitation id exercitation cupidatat pariatur.
+        </p>
 
-<br />
-<br />
-<div>
-  <h3>The Audio Element</h3>
-  <audio src="/audio/3Mice.mp3" controls>
-    Looks like your browser does not support the <code>audio</code> element
-  </audio>
-</div>
+        <div>
+          <h4>Education</h4>
+          <p>Irure consequat magna occaecat irure magna mollit ut.</p>
+          <ul>
+            <li>Primary Education</li>
+            <li>Secondary Education</li>
+            <li>Tertiary Education</li>
+          </ul>
+        </div>
 
-<br />
-<br />
-<div>
-  <h3>The Video Element</h3>
-  <video src="/video/siyabonga.webm" controls>
-    If you see this text, it means your browser is old or does not support
-    playing video files.
-  </video>
-</div>
+        <div>
+          <h4>My Tech Career</h4>
+          <p>
+            In anim proident quis adipisicing enim aliquip. Pariatur mollit et
+            commodo nostrud nulla ut officia. Ut duis eiusmod consectetur dolor
+            anim dolor laborum sint et. Cupidatat cillum deserunt officia
+            excepteur sit sint. Aute do exercitation labore Lorem sit occaecat
+            fugiat veniam eiusmod amet dolore quis dolore dolore. Proident minim
+            ex ipsum esse duis sint veniam commodo.
+          </p>
+        </div>
+
+        <div>
+          <h4>Skills</h4>
+          <label for="html">HTML:</label>
+          <progress id="html" value="85" max="100">85%</progress>
+          <label for="css">CSS:</label>
+          <progress id="css" value="45" max="100">45%</progress>
+          <label for="js">JavaScript:</label>
+          <progress id="js" value="30" max="100">30%</progress>
+        </div>
+      </section>
+
+      <section>
+        <h3>My Contact Details</h3>
+        <div>
+          <div>
+            Email:
+            <a href="mailto:reachme@mailserver.com">reachme@mailserver.com</a>
+          </div>
+          <div>Tel: <a href="tel:+233240123456">+233 (0) 240123456</a></div>
+        </div>
+        <div>
+          Address Location:
+          <address>
+            Tema High Way, <br />
+            Accra, Greater Accra, <br />
+            +233 Ghana
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
