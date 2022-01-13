@@ -1,117 +1,46 @@
-<!-- input element and types -->
-<h3>Input element and types</h3>
+<!-- image element -->
+<h3>Displaying Images</h3>
+<img src="/images/leaves.jpg" alt="a blue car" />
+
+<!-- picture element -->
+<picture>
+  <source srcset="/images/leaves.png" type="image/png" />
+  <source srcset="/images/leaves.webp" type="image/webp" />
+  <img src="/images/leaves.jpg" alt="green leaves" />
+</picture>
+
+<br />
+<br />
+<h3>Responsive Image</h3>
+<picture>
+  <source
+    media="(max-width: 760px)"
+    srcset="/images/leaves.png"
+    type="image/png"
+  />
+  <source
+    media="(min-width: 761px)"
+    srcset="/images/leaves@2x.png"
+    type="image/webp"
+  />
+  <img src="/images/leaves.png" alt="green leaves" />
+</picture>
+
+<br />
+<br />
 <div>
-  text
-  <input type="text" /> <br />
-  <br />
+  <h3>The Audio Element</h3>
+  <audio src="/audio/3Mice.mp3" controls>
+    Looks like your browser does not support the <code>audio</code> element
+  </audio>
 </div>
 
+<br />
+<br />
 <div>
-  email
-  <input type="email" /> <br />
-  <br />
+  <h3>The Video Element</h3>
+  <video src="/video/siyabonga.webm" controls>
+    If you see this text, it means your browser is old or does not support
+    playing video files.
+  </video>
 </div>
-
-<div>
-  password
-  <input type="password" /> <br />
-  <br />
-</div>
-
-<div>
-  <input type="date" /> <br />
-  <br />
-</div>
-
-<div><input type="color" /> <br /><br /></div>
-
-<div><input type="checkbox" /> <br /><br /></div>
-
-<div>
-  <input type="button" value="click me" /> <br />
-  <br />
-</div>
-
-<!-- label element with inputs -->
-<h3>Label with inputs</h3>
-<div>
-  <label for="name">What is your name:</label>
-  <input type="text" name="name" />
-  <br />
-  <br />
-</div>
-
-<div>
-  <label>Gender:</label>
-  <label>
-    <input type="radio" name="gender" value="male" />
-    Male
-  </label>
-  <label>
-    <input type="radio" name="gender" value="female" />
-    Female
-  </label>
-  <br />
-  <br />
-</div>
-
-<div>
-  <input type="checkbox" name="terms" id="terms" />
-  <label for="terms">I agree to terms and conditions</label>
-  <br />
-  <br />
-</div>
-
-<!-- options element -->
-<div>
-  <label for="language">Primary language:</label>
-  <select>
-    <option>Twi</option>
-    <option>Ewe</option>
-    <option>Fante</option>
-    <option>Ga</option>
-    <option>Adangbe</option>
-  </select>
-
-  <br />
-  <br />
-</div>
-
-<!-- fieldset, legend and form elements -->
-<h3>Fieldset, Legend and Form Elements</h3>
-<form action="#" method="post">
-  <fieldset>
-    <legend>Personal Data</legend>
-    <label for="first_name">First Name: </label>
-    <input type="text" name="first_name" placeholder="first name" />
-    <br />
-    <br />
-
-    <label for="last_name">Last Name: </label>
-    <input type="text" name="last_name" placeholder="last name" />
-    <br />
-    <br />
-
-    <label for="age">Age:</label>
-    <input type="number" name="age" min="18" max="100" />
-  </fieldset>
-  <br />
-  <br />
-
-  <fieldset>
-    <legend>Contact Details</legend>
-    <label for="email">What is your email:</label>
-    <input type="email" name="email" required />
-    <br />
-    <br />
-    <input type="checkbox" name="terms" id="terms" />
-    <label for="terms">I agree to recieve marketing emails</label>
-    <br />
-    <br />
-  </fieldset>
-
-  <br />
-  <br />
-  <input type="reset" value="Reset Form" />
-  <input type="button" value="Submit Form" />
-</form>
